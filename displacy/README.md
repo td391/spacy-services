@@ -11,16 +11,15 @@ dependencies, part-of-speech tags and/or entities. For usage examples, see the
 
 ```bash
 pip install -r requirements.txt
-python -m spacy download en_core_web_lg
 python app.py
 ```
 
 ## Docker
 
 ```bash
-gcloud builds submit --tag gcr.io/$PROJECTID/displacy:1.0
-docker build -t gcr.io/$PROJECTID/displacy:1.0 .
-docker run -p 8080:8080 gcr.io/$PROJECTID/displacy:1.0
+gcloud builds submit --tag gcr.io/$PROJECTID/displacy:2.0
+docker build -t gcr.io/$PROJECTID/displacy:2.0 .
+docker run -p 8080:8080 gcr.io/$PROJECTID/displacy:2.0
 ```
 
 ## API

@@ -10,8 +10,7 @@ COPY app.py .
 
 # Install production dependencies.
 RUN pip install --upgrade pip && \
-  pip install -r requirements.txt && \
-  python -m spacy download en_core_web_lg
+  pip install -r requirements.txt
 
 # Run the web service on container startup.
 CMD ["python", "app.py"]
